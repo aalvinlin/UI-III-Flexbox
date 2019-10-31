@@ -334,7 +334,7 @@ p {
 }
 
 
-/* === CSS for middle of page === */
+/* === CSS for middle of index page === */
 
 #two_across_parent, #three_across_parent {
 	display: flex;
@@ -368,3 +368,90 @@ footer {
 	font-size: 10px;
 	text-align: center;
 }
+
+
+/* Media queries for index page */
+
+@media only screen and (max-width: 600px) {
+
+	#intro {
+		flex-direction: column-reverse;
+		flex-wrap: wrap;
+
+	}
+
+	#intro div, #intro img {
+		width: 70%;
+	}
+
+	#intro div {
+		height: 200px;
+	}
+
+
+	#intro h1 {
+		font-size: 32px;
+	}
+
+	#intro a {
+		font-size: 12px;
+		width: 75px;
+	}
+
+	#two_across_parent, #three_across_parent {
+		flex-wrap: wrap;
+	}
+
+	.two_across, .three_across {
+		width: 100%;
+	}
+
+
+  }
+
+
+/* Media queries for services page */
+
+@media only screen and (max-width: 600px) {
+
+	header, nav
+	{
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	header a
+	{
+		width: 600px;
+	}
+
+	#facts_container
+	{
+		flex-wrap: wrap;
+	}
+
+	.service_types, #facts
+	{
+		width: 100%;
+	}
+
+	#facts_container img {
+
+		margin: 20px auto;
+
+		width: 80%;
+	}
+
+  }
+
+  @media only screen and (min-width: 1280px) {
+
+	.service_types
+	{
+		width: 30%;
+	}
+	
+  }
+
+
